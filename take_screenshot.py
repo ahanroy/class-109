@@ -47,10 +47,10 @@ while True:
             if all(finger_fold_status):
                 image = pyautogui.screenshot()
                 cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
-                cv2.imwrite("in_memory_to_disk.png", image)
+                cv2.imwrite("in_memory_to_disk.png", img)
                 pyautogui.screenshot("staright_to_disk.png")
                 image = cv2.imread("straight_to_disk.png")
-                cv2.imshow("Screenshot",imutils.resize(image,width=600))
+                cv2.imshow("Screenshot",imutils.resize(img,width=600))
                    
 
 
